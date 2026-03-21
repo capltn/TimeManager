@@ -133,22 +133,23 @@ p {
     flex-direction: row-reverse;
     flex-wrap: wrap;
     gap: 3em;
+    justify-content: center;
+    align-content: center;
 }
 
 .navbar-menu-item {
     color: var(--primary);
-    display: flex;
-    width: 150px;
+    width: 300px;
+    height: 150px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     margin-top: 10px;
     padding: 10px;
-    font-size: 1em;
     border-radius: 20px;
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
     border: 1px solid var(--primary);
     backdrop-filter: blur(20px);
 }
@@ -157,10 +158,11 @@ p {
     color: var(--accent);
     border: 1px solid var(--accent);
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .navbar-menu-icon.material-symbols-outlined {
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1;
     display: inline-flex;
     align-items: center;
@@ -172,4 +174,10 @@ p {
     pointer-events: none;
     user-select: none;
     filter: blur(10px);
+}
+
+.navbar-menu-item p {
+    max-width: 100%;
+    font-size: 2rem;
+    overflow: hidden;
 }
