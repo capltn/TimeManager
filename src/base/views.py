@@ -5,7 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.urls import reverse_lazy
 
 
-@login_required(login_url=reverse_lazy("register_user"))
+@login_required(login_url=reverse_lazy("login_user"))
 def home_view(request: HttpRequest) -> HttpResponse:
     """Return home screen."""
     return render(request, "base/home_view.html")

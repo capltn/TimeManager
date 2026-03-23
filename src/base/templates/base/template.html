@@ -31,7 +31,8 @@
                 hx-on:click="htmx.trigger(this, 'openNavbarMenu');">
                 apps
             </div>
-            <div class="navbar-item  material-symbols-outlined" data-menu-id="menue-profile">
+            <div class="navbar-item  material-symbols-outlined" data-menu-id="menue-profile"
+                hx-on:click="htmx.trigger(this, 'openLink');" data-linkID="logout_user">
                 logout
             </div>
             <div class="navbar-item material-symbols-outlined theme-toggle" id="theme-toggle-btn" role="button"
