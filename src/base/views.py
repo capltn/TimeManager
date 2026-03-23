@@ -5,7 +5,7 @@ from django.urls import NoReverseMatch, reverse
 
 def home_view(request: HttpRequest) -> HttpResponse:
     """Return home screen."""
-    return render(request, "base/home.html")
+    return render(request, "base/home_view.html")
 
 def link_request(request: HttpRequest) -> HttpResponse:
     """Return requested link."""
