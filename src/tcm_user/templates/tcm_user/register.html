@@ -1,0 +1,46 @@
+{% extends 'base/template.html' %}
+{% load static %}
+
+
+{% block additionalStyle %}
+<link rel="stylesheet" href="{% static 'css/user_view.css' %}" />
+
+{% endblock %}
+
+{% block page_content %}
+<div class="user-card">
+  <form method="post" class="user-form">
+    <div class="div-button" hx-on:click="htmx.trigger(this, 'openLink');" data-linkID="home">Back to Login</div>
+
+    <h1>Register</h1>
+    <p>
+      <span class="info-icon">
+        {{ registerform.username.label_tag }}
+
+        <span class="helptext">{{ registerform.username.help_text }}</span>
+      </span>
+      {{ registerform.username }}
+
+      <span class="info-icon">
+        {{ registerform.email.label_tag }}
+
+        <span class="helptext">{{ registerform.email.help_text }}</span>
+      </span>
+      {{ registerform.email }}
+
+      {{ registerform.password1.label_tag }}
+
+      {{ registerform.password1 }}
+
+      {{ registerform.password2.label_tag }}
+      {{ registerform.password2 }}
+
+    </p>
+    {% csrf_token %}
+
+    <button type="submit" class="div-button">Register</button>
+    {% if hint %}
+    <div class="error-msg">{{ hint }}</div>
+    {% endif %}
+  </form>
+  {% endblock %}
