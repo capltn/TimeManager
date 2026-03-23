@@ -1,0 +1,712 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{% static 'css/base.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script type="text/javascript" src="{% static 'js/navbar.js' %}" defer></script>
+
+    <script>
+        var csrftoken = '{{ csrf_token }}';
+    </script>
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+
+    {% block additionalStyle %}
+
+    {% endblock %}
+</head>
+
+<body>
+    <div class="navbar-top">
+        <div class="navbar-title">TCM</div>
+        <div class="navbar-items">
+            <div class="navbar-item material-symbols-outlined" role="button" aria-label="Toggle theme"
+                hx-on:click="htmx.trigger(this, 'openNavbarMenu');">
+                apps
+            </div>
+            <div class="navbar-item  material-symbols-outlined" data-menu-id="menue-profile">
+                logout
+            </div>
+            <div class="navbar-item material-symbols-outlined theme-toggle" id="theme-toggle-btn" role="button"
+                aria-label="Toggle theme" hx-on:click="htmx.trigger(this, 'toggleTheme');">
+                dark_mode
+            </div>
+        </div>
+
+
+    </div>
+    <div class="app-menu" id="menue-apps">
+        <div class="navbar-menu-content">
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                ProfileProfileProfileProfile
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+                        <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+            <div class="navbar-menu-item"><span class="navbar-menu-icon material-symbols-outlined">
+                    account_circle
+                </span>
+                <p> Profile</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page-content" id="page-content">
+        <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+                <div class="card">
+            <h1>Welcome to TCM</h1>
+            <p>Manage tasks, track time, and stay focused with a modern dashboard interface.</p>
+        </div>
+        <div class="card">
+            <h2>Today</h2>
+            <p>Tap the toolbar icons to open quick actions and toggle dark/light mode.</p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
